@@ -29,7 +29,21 @@ nav .navbar-nav li a:hover,nav .navbar-nav li a:active{
 }
 
 .welcom{
-	height: 80vh;
+	/* height: 80vh; */
+}
+i{
+	color:#325b74;
 }
 
+.btn{
+	
+	background-color: #325b74!important;
+    color: white !important;
+}
+
+h5{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
