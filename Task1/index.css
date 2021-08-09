@@ -23,5 +23,13 @@ nav .navbar-nav li a{
 	color: white !important;
 }
 
+nav .navbar-nav li a:hover,nav .navbar-nav li a:active{
+	color: rgb(224 219 71 / 80%) ;
+	font-size: large;
+}
+
+.welcom{
+	height: 80vh;
+}
 
 
