@@ -58,5 +58,16 @@ h5{
 
 }
 
+.priceborder{
+	border-top: 0px !important;
+	border-bottom:0px  !important;
+}
+
+.centerProperty{
+	display: flex;
+	justify-content: center;
+}
+
+
 
 
