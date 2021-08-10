@@ -32,10 +32,15 @@ i{
 	color:#325b74;
 }
 
-.btn{
+.btn .btn-primary:hover {
 	
-	background-color: #325b74!important;
-    color: white !important;
+	background-color: #325b74 !important;
+    
+}
+
+button a{
+	text-decoration: none;
+	color: white;
 }
 
 h5{
@@ -43,4 +48,15 @@ h5{
 	align-items: center;
 	justify-content: center;
 }
+
+.primage{
+	max-width: 335px;
+	max-height: 419px;
+}
+.projectbody{
+	background-color: #bbb2b257;
+
+}
+
+
 
