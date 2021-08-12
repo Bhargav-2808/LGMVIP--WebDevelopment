@@ -17,12 +17,14 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap"
       rel="stylesheet"
     />
+    <!-- <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css"> -->
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
     <title>LGMVIP</title>
   </head>
   <body>
@@ -320,7 +322,19 @@
 
     <!-- video section  -->
 
-    <div class="video_"></div>
+      <div id="slideshow-wrapper">
+        <div id="slideshow">
+          <img src="./images/p1.jpg">
+          <img src="./images/p2.jpg">
+          <img src="./images/p3.jpg">
+        </div>
+        <div style="text-align: center">
+          <div id="circle1" class="circle"></div>
+          <div id="circle2" class="circle"></div>
+          <div id="circle3" class="circle"></div>
+        </div>
+      </div>		
+    
 
     <!-- js adding -->
 
@@ -339,5 +353,8 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js" type="text/js"></script>
+   
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
   </body>
 </html>
