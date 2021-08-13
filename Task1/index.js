@@ -16,8 +16,7 @@
 // 	 <div id="circle3" class="circle"></div>
 // </div>
 
-
-$(document).ready(function(){ //wait until page is fully loaded
+//wait until page is fully loaded
 
 	//the slideshow code uses this to determine a few things. Make sure this is set correctly!			
 	const NUMBER_OF_SLIDES = 3;
@@ -66,4 +65,3 @@ $(document).ready(function(){ //wait until page is fully loaded
 		setCircle(slide_number);
 
 	}, 4500);	
-});
