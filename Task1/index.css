@@ -2,6 +2,10 @@ body {
 
 	margin:0;
 }
+
+html{
+	position: relative;
+}
 /* background section */
 
 .backgr{
@@ -62,6 +66,7 @@ h5{
 .centerProperty{
 	display: flex;
 	justify-content: center;
+	flex-direction: row;
 }
 
 /* team */
@@ -91,7 +96,8 @@ h5{
 	  height: 50vh;
 	  background-repeat: no-repeat;
 	  background-size: cover;
-	  position: relative;
+	  position: static;
+	  
   }
   
 
@@ -143,4 +149,6 @@ h5{
 	opacity: 1;
 	right: 10px;
   } */
+
+  
 
