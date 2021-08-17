@@ -1,5 +1,5 @@
 let left=0;
-        let images=["img2.jpg","img3.jpg","img5.jpg","img6.png","img7.jpg","img8.jpg","img9.jpg","img10.jpg","img11.jpg"];
+        let images=["./images/g1.gif","./images/g2.gif","./images/g3.gif","./images/g4.gif","./images/g5.gif"];
         let right=images.length-1;
         let i=1;
         let defaultImages=()=>{
@@ -15,7 +15,7 @@ let left=0;
                 document.querySelector("#leftImage").src=images[i-1];
                 document.querySelector("#rightImage").src=images[i+1];
             }
-            if(i==right){
+            if(i==right-1){
                 document.querySelector("#next").disabled=true;
             }
         }
@@ -27,7 +27,7 @@ let left=0;
                 document.querySelector("#rightImage").src=images[i];
                 i--;
             }
-            if(i==left){
+            if(i==left+1){
                 document.querySelector("#prev").disabled=true;
             }
         }
