@@ -359,14 +359,22 @@
 
   <!-- video section  -->
   
-    <div class="container">
+    <div class="container-fluied backvi mt-5">
         <div class="row">
-            <div class="col "><img class="video" src="./images/g1.gif" alt="#" id="leftImage"></div>
-            <div class="col "><img class="video" src="./images/g2.gif" alt="#" id="activeImage" ></div>
-            <div class="col "><img class="video" src="./images/g3.gif" alt="#" id="rightImage"></div>
+          <div class="col">
+            <h1 class="centerProperty mt-5" style="color: white;">Video Project</h1>
+          </div>
         </div>
-        <button onclick="prevSlide();" id="prev">Prev</button>
-        <button onclick="nextSlide();" id="next">Next</button>
+        <div class="row mt-5">
+            <div class="col centerProperty" ><i onclick="nextSlide();" id="next" class="fas fa-arrow-left fa-7x vt" ></i></div>
+            <div class="col centerProperty"><img class="video centerProperty mt-5" src="./images/g1.gif" alt="#" id="leftImage" ></div>
+            <div class="col centerProperty"><img class="video centerProperty mt-2" src="./images/g2.gif" alt="#" id="activeImage" style="width:420px; height:420px;" ></div>
+            <div class="col centerProperty"><img class="video centerProperty mt-5" src="./images/g3.gif" alt="#" id="rightImage"></div>
+            <div class="col centerProperty"><i onclick="prevSlide();" id="prev"class="fas fa-arrow-right fa-7x vt"></i></div>
+          </div>
+        <i class="arrow left" onclick="nextSlide();" id="next"></i>
+        <i class="arrow right" onclick="prevSlide();" id="prev"></i>
+       
     </div>
 
   

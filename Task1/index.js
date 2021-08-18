@@ -1,5 +1,5 @@
 let left=0;
-        let images=["./images/g1.gif","./images/g2.gif","./images/g3.gif","./images/g4.gif","./images/g5.gif"];
+        let images=["./images/g1.gif","./images/g2.gif","./images/g3.gif","./images/g4.gif","./images/g5.gif","./images/g6.gif","./images/g7.gif","./images/g8.gif","./images/g9.gif","./images/g10.gif"];
         let right=images.length-1;
         let i=1;
         let defaultImages=()=>{
