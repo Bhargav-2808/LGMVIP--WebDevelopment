@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { Card, ListGroup, ListGroupItem } from 'react-bootstrap'
+import { Card,  } from 'react-bootstrap'
 
 import Backdrop from '@material-ui/core/Backdrop';
 import CircularProgress from '@material-ui/core/CircularProgress';
@@ -33,7 +33,7 @@ const Data = () => {
     }
 
     useEffect(() => {
-        loadusers();
+       
     }, [])
 
 
@@ -41,34 +41,30 @@ const Data = () => {
     return (
         <>
             <button onClick={loadusers} > getData</button>
-            {/* <ul>
-                {
-                    users.map((data, key) => (
-                        <p key={key}>
-
-                            {data.email ? null: <Backdrop className={classes.backdrop} open>
-                                <CircularProgress color="inherit" />
-                            </Backdrop>
-                            }
-                        </p>
-                    ))
-                }
-            </ul> */}
+            
             {
                 users.map((data, key) => {
                     return (
-                        <div>
+                        <div key={key}>
 
-                        <Card style={{ width: '12rem' }}>
-                            <Card.Img variant="top" src={data.avatar} />
-                            <Card.Body>
-                                <Card.Title>{data.first_name} {data.last_name}</Card.Title>
-                                <Card.Text>
-                                    {data.email}
-                                </Card.Text>
-                            </Card.Body>
+                            <Card style={{ width: '12rem' }}>
+                                <Card.Img variant="top" src={data.avatar ? data.avatar : <Backdrop className={classes.backdrop} open>
+                                    <CircularProgress color="inherit" />
+                                </Backdrop>} />
+                                <Card.Body>
+                                    <Card.Title >{data.first_name ? data.first_name : <Backdrop className={classes.backdrop} open>
+                                        <CircularProgress color="inherit" />
+                                    </Backdrop>} {data.last_name ? data.last_name : <Backdrop className={classes.backdrop} open>
+                                        <CircularProgress color="inherit" />
+                                    </Backdrop>}</Card.Title>
+                                    <Card.Text>
+                                        {data.email ? data.email : <Backdrop className={classes.backdrop} open>
+                                            <CircularProgress color="inherit" />
+                                        </Backdrop>}
+                                    </Card.Text>
+                                </Card.Body>
 
-                        </Card>
+                            </Card>
                         </div>
                     )
                 })
